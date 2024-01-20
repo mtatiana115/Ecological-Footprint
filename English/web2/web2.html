@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cálculo</title>
+    <link rel="stylesheet" href="../normalize.css" />
+    <link rel="stylesheet" href="../boilerplate.css" />
+    <link rel="stylesheet" href="./web2.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <a href="../web4/web4.html" class="__item --iniciar text-body--1">
+          Sign In
+        </a>
+        <a href="../web3/web3.html" class="__item --nuevo text-body--1">
+          Sign Up
+        </a>
+        <a href="../web2/web2.html" class="__item --calcular text-body--1">
+          Calculate Only
+        </a>
+      </nav>
+      <a href="../index.html">
+        <img class="__home" src="../assets/home.png" alt="home" />
+      </a>
+      <div>
+        <a class="__translate" href="../../web2/web2.html">Español</a>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="__heading">
+        <h1 class="text-heading--1">Carbon Footprint Calculator</h1>
+      </div>
+      <div class="__form-calc-wrapper">
+        <form class="__form" action="" method="post">
+          <div class="__section">
+            <h3 class="__title text-heading--3">General Information</h3>
+            <div class="__field">
+              <label class="__label text-body--1"> Bill Type: </label>
+              <div class="__wrapper-radio">
+                <div>
+                  <input
+                    class="__input-radio"
+                    type="radio"
+                    name="type"
+                    value="Company"
+                  />
+                  <span class="text-body--1"> Company </span>
+                </div>
+                <div>
+                  <input
+                    class="__input-radio"
+                    type="radio"
+                    name="type"
+                    value="Housing"
+                  />
+                  <span class="text-body--1"> Housing </span>
+                </div>
+              </div>
+            </div>
+            <div class="__field">
+              <label class="__label text-body--1" for="date">Date:</label>
+              <input id="date" type="date" />
+            </div>
+            <div class="__field">
+              <label class="__label text-body--1" for="number"
+                >Number of Occupants/Members:</label
+              >
+              <input
+                class="__input text-body--1"
+                id="number"
+                type="number"
+                min="1"
+              />
+            </div>
+          </div>
+
+          <div class="__section">
+            <h3 class="__title text-heading--3">Bill Record</h3>
+
+            <div class="__field">
+              <label class="__label text-body--1" for="aqueduct"
+                >Water Consumption (m³):</label
+              >
+              <input
+                class="__input text-body--1"
+                id="aqueduct"
+                type="number"
+                step="0.01"
+              />
+            </div>
+
+            <div class="__field">
+              <label class="__label text-body--1" for="sewerage"
+                >Sewerage Consumption (m³):</label
+              >
+              <input
+                class="__input text-body--1"
+                id="sewerage"
+                type="number"
+                step="0.01"
+              />
+            </div>
+
+            <div class="__field">
+              <label class="__label text-body--1" for="waste"
+                >Non-Recyclable Waste Consumption (tons):</label
+              >
+              <input
+                class="__input text-body--1"
+                id="waste"
+                type="number"
+                step="0.01"
+              />
+            </div>
+
+            <div class="__field">
+              <label class="__label text-body--1" for="energy"
+                >Energy Consumption (kWh):</label
+              >
+              <input
+                class="__input text-body--1"
+                id="energy"
+                type="number"
+                step="0.01"
+              />
+            </div>
+
+            <div class="__field">
+              <label class="__label text-body--1" for="gas"
+                >Gas Consumption (m³):</label
+              >
+              <input
+                class="__input text-body--1"
+                id="gas"
+                type="number"
+                step="0.01"
+              />
+            </div>
+          </div>
+
+          <button class="__button" type="submit">
+            <span class="text-body--1"> Submit </span>
+          </button>
+        </form>
+        <img
+          class="__image-1"
+          src="../assets/calculator1.png"
+          alt="Calculator"
+        />
+        <img class="__image-2" src="../assets/roboto2.png" alt="" />
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="__social">
+        <h3 class="text-heading--3">Social Media</h3>
+        <ul class="__list">
+          <li>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                class="__icon"
+                src="../assets/socialmedia/icon__instagram.svg"
+                alt="instagram"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                class="__icon"
+                src="../assets/socialmedia/icon__facebook.svg"
+                alt="facebook"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.gmail.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                class="__icon"
+                src="../assets/socialmedia/icon__email.svg"
+                alt="email"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="__copyright">
+        <p class="text-body--1">
+          &copy; 2023 Carbon Footprint.<br />
+          All rights reserved.
+        </p>
+      </div>
+      <div>
+        <a class="text-body--1" href="#">About the site</a>
+      </div>
+    </footer>
+  </body>
+</html>

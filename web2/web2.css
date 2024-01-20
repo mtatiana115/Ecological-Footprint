@@ -1,0 +1,96 @@
+body {
+  background-color: #2b4413;
+}
+
+.main {
+  padding: 30px;
+  .__heading {
+    padding-block: 60px;
+    text-align: center;
+  }
+
+  .__form-calc-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    .__form {
+      .__section {
+        padding-block: 30px;
+
+        .__title {
+          margin-bottom: 16px;
+          text-align: center;
+        }
+
+        .__field {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          margin-bottom: 16px;
+
+          .__wrapper-radio {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            .__input-radio {
+              width: 16px;
+              height: 16px;
+            }
+          }
+
+          .__input {
+            height: 30px;
+            padding-left: 8px;
+            border: 1px solid white;
+            border-radius: 5px;
+            background-color: transparent;
+          }
+
+          .__input:focus {
+            border: none;
+            outline: 1px solid #72db10;
+          }
+        }
+      }
+
+      .__button {
+        display: block;
+        width: 100px;
+        height: 50px;
+        margin-inline: auto;
+        border-radius: 10px;
+        background-color: #578523;
+        cursor: pointer;
+      }
+
+      .__button:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .__image-1 {
+      display: none;
+
+      @media (width>768px) {
+        display: block;
+        position: absolute;
+        width: 300px;
+        top: 55%;
+        right: 10%;
+      }
+    }
+
+    .__image-2 {
+      display: none;
+
+      @media (width>768px) {
+        display: block;
+        position: absolute;
+        width: 300px;
+        left: 5%;
+      }
+    }
+  }
+}
